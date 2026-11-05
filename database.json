@@ -1,0 +1,99 @@
+{
+  "categories": [
+    { "id": 1, "name": "Burger" },
+    { "id": 2, "name": "Gà rán" },
+    { "id": 3, "name": "Pizza" },
+    { "id": 4, "name": "Đồ uống" },
+    { "id": 5, "name": "Món phụ" }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "name": "Burger bò phô mai",
+      "categoryId": 1,
+      "price": 59000,
+      "image": "https://placehold.co/400x260/f4a261/ffffff?text=Burger+bo",
+      "description": "Bò nướng, phô mai cheddar, rau xà lách, sốt đặc biệt.",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Burger gà giòn",
+      "categoryId": 1,
+      "price": 49000,
+      "image": "https://placehold.co/400x260/e9c46a/ffffff?text=Burger+ga",
+      "description": "Đùi gà chiên giòn, sốt mayonnaise, dưa leo.",
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Gà rán 2 miếng",
+      "categoryId": 2,
+      "price": 65000,
+      "image": "https://placehold.co/400x260/e76f51/ffffff?text=Ga+ran",
+      "description": "Hai miếng gà rán giòn cay.",
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Cánh gà sốt mật ong",
+      "categoryId": 2,
+      "price": 55000,
+      "image": "https://placehold.co/400x260/d62828/ffffff?text=Canh+ga",
+      "description": "6 cánh gà chiên phủ sốt mật ong.",
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Pizza hải sản (M)",
+      "categoryId": 3,
+      "price": 129000,
+      "image": "https://placehold.co/400x260/2a9d8f/ffffff?text=Pizza",
+      "description": "Tôm, mực, phô mai mozzarella, sốt cà chua.",
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Khoai tây chiên",
+      "categoryId": 5,
+      "price": 25000,
+      "image": "https://placehold.co/400x260/f6bd60/ffffff?text=Khoai+tay",
+      "description": "Khoai tây chiên giòn, kèm tương cà.",
+      "available": true
+    },
+    {
+      "id": 7,
+      "name": "Coca-Cola",
+      "categoryId": 4,
+      "price": 15000,
+      "image": "https://placehold.co/400x260/264653/ffffff?text=Coca",
+      "description": "Lon 330ml.",
+      "available": true
+    },
+    {
+      "id": 8,
+      "name": "Trà đào",
+      "categoryId": 4,
+      "price": 29000,
+      "image": "https://placehold.co/400x260/ffb4a2/ffffff?text=Tra+dao",
+      "description": "Trà đào cam sả, ly 500ml.",
+      "available": false
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerName": "Nguyễn Văn A",
+      "phone": "0912345678",
+      "address": "Thạch Hoà, Thạch Thất, Hà Nội",
+      "note": "Ít đá",
+      "items": [
+        { "foodId": 1, "name": "Burger bò phô mai", "price": 59000, "quantity": 2 },
+        { "foodId": 7, "name": "Coca-Cola", "price": 15000, "quantity": 2 }
+      ],
+      "total": 148000,
+      "status": "pending",
+      "createdAt": "2026-11-01T09:30:00.000Z"
+    }
+  ]
+}
