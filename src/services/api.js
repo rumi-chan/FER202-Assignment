@@ -20,4 +20,6 @@ export const createOrder = (order) => api.post('/orders', order).then((res) => r
 export const updateOrder = (id, data) => api.patch(`/orders/${id}`, data).then((res) => res.data);
 export const deleteOrder = (id) => api.delete(`/orders/${id}`);
 
+
+
 export default api;

@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
 import AppNavbar from './components/AppNavbar';
 import Menu from './pages/Menu';
+import Orders from './pages/Order';
 
 const App = () => {
     //  hạn chế: F5 sẽ mất giỏ hàng
@@ -47,7 +48,10 @@ const App = () => {
             <Container className="py-4">
                 <Routes>
                     <Route path="/" element={<Menu addToCart={addToCart} />} />
+                    <Route path="/orders" element={<Orders />} />
+
                 </Routes>
+
             </Container>
         </>
     );
