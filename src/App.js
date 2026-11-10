@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
 import AppNavbar from './components/AppNavbar';
+import ManageFoods from './pages/ManageFoods';
 import Menu from './pages/Menu';
 
 const App = () => {
@@ -47,6 +48,8 @@ const App = () => {
             <Container className="py-4">
                 <Routes>
                     <Route path="/" element={<Menu addToCart={addToCart} />} />
+                    <Route path="/admin/foods" element={<ManageFoods />} />
+                    <Route path="/foods" element={<ManageFoods />} />
                 </Routes>
             </Container>
         </>
