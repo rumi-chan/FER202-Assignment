@@ -5,6 +5,7 @@ import AppNavbar from './components/AppNavbar';
 import ManageFoods from './pages/ManageFoods';
 import Menu from './pages/Menu';
 import Orders from './pages/Order';
+import Cart from './pages/Cart';
 
 const App = () => {
     //  hạn chế: F5 sẽ mất giỏ hàng
@@ -52,6 +53,13 @@ const App = () => {
                     <Route path="/orders" element={<Orders />} />
                     <Route path="/admin/foods" element={<ManageFoods />} />
                     <Route path="/foods" element={<ManageFoods />} />
+                    <Route path="/cart" element={<Cart cart={cart}
+                        changeQuantity={changeQuantity}
+                        removeFromCart={removeFromCart}
+                        clearCart={clearCart}
+                    />
+                    }
+                    />
                 </Routes>
 
             </Container>
