@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
 import AppNavbar from './components/AppNavbar';
 import Menu from './pages/Menu';
-
+import Cart from './pages/Cart';
 const App = () => {
     //  hạn chế: F5 sẽ mất giỏ hàng
     const [cart, setCart] = useState([]);
@@ -47,6 +47,13 @@ const App = () => {
             <Container className="py-4">
                 <Routes>
                     <Route path="/" element={<Menu addToCart={addToCart} />} />
+                    <Route path="/cart" element={<Cart cart={cart}
+                        changeQuantity={changeQuantity}
+                        removeFromCart={removeFromCart}
+                        clearCart={clearCart}
+                    />
+                    }
+                    />
                 </Routes>
             </Container>
         </>
